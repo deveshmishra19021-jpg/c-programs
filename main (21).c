@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+
+
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    int a=1;
+    for (int i=2;i<=n-1;i=i+1) {
+        if(n%i==0){
+            a=0;
+            break;}
+    }if(n==1)printf("niether prime or even");
+    else if(a==1)printf("it is prime");
+    else printf("it is composite");
+       return 0; }
+        
+    
